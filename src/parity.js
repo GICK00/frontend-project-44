@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { getRandomInt } from "../src/index.js";
 
-export default function greetAnswer(name) 
+export default function parity(name) 
 {
     let i = 0;
     let result = 0;
