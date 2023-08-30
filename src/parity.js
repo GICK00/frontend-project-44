@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import { getRandomInt } from "../src/index.js";
 
 export default function greetAnswer(name) 
 {
@@ -39,11 +40,4 @@ export default function greetAnswer(name)
     }
     if(result === 3)
         console.log(`Congratulations, ${name}`);
-}
-
-function getRandomInt(min, max) 
-{
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
