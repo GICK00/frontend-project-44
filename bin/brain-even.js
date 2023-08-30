@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import index from "../src/index.js"
-import parity from '../src/parity.js';
+import parity from '../bin/brain-games/parity.js';
 
 console.log('Welcome to the Brain Games!');
 var name = index.greetUser();

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import  { greetUser } from "../src/index.js"
-import gcd from '../src/gcd.js';
+import gcd from '../bin/brain-games/gcd.js';
 
 console.log('Welcome to the Brain Games!');
 var name = greetUser();

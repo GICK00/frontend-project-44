@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import  { greetUser } from "../src/index.js"
-import progression from '../src/progression.js';
+import progression from '../bin/brain-games/progression.js';
 
 console.log('Welcome to the Brain Games!');
 var name = greetUser();

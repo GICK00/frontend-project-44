@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import  { greetUser } from "../src/index.js"
-import prime from '../src/prime.js';
+import prime from '../bin/brain-games/prime.js';
 
 console.log('Welcome to the Brain Games!');
 var name = greetUser();
