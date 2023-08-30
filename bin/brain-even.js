@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-import index from "../src/index.js"
-import parity from '../bin/brain-games/parity.js';
+import { greetUser } from "../src/index.js";
+import game from '../bin/brain-games/main.js';
 
 console.log('Welcome to the Brain Games!');
-var name = index.greetUser();
+var name = greetUser();
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
-parity(name);
+game(name, "parity");
