@@ -4,40 +4,29 @@ import gcd from "../../src/gcd.js";
 import prime from "../../src/prime.js";
 import progression from "../../src/progression.js";
 
-export default function name(name, type) 
-{
-    let i = 0;
-    let result = 0;
-    while(3 > i)
-    {
+export default function main(name, type) {
+    let i = 0, result = 0;
+    while(3 > i) {
         i++;  
         var mas = [];      
-        switch(type)
-        {
-            case "calc":
-                mas = calc();
+        switch(type) {
+            case "calc": mas = calc();
                 break;
-            case "gcd":
-                mas = gcd();
+            case "gcd": mas = gcd();
                 break;
-            case "parity":
-                mas = parity();
+            case "parity": mas = parity();
                 break;
-            case "prime":
-                mas = prime();
+            case "prime": mas = prime();
                 break;
-            case "progression":
-                mas = progression();
+            case "progression": mas = progression();
                 break;
         }
 
-        if (mas[0] === mas[1])
-        {
+        if (mas[0] === mas[1]) {
             console.log(`Correct!`);
             result++;
         }
-        else
-        {
+        else {
             console.log(`'${mas[0]}' is wrong answer ;(. Correct answer was '${mas[1]}'.\r\nLet's try again, ${name}!`);
             return;
         }
