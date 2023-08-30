@@ -14,3 +14,6 @@
 
 <h1>Игра "Арифметическая прогрессия"</h1>
 <a href="https://asciinema.org/a/xcXHR4jxP4kfY91mHjibfOomg" target="_blank"><img src="https://asciinema.org/a/xcXHR4jxP4kfY91mHjibfOomg.svg" /></a>
+
+<h1>Игра "Простое ли число?"</h1>
+<a href="https://asciinema.org/a/Hnx2zhC4R47p8NrWiuP0R7sRX" target="_blank"><img src="https://asciinema.org/a/Hnx2zhC4R47p8NrWiuP0R7sRX.svg" /></a>
