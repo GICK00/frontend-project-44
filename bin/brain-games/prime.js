@@ -1,8 +1,7 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt } from "../src/index.js";
+import { getRandomInt } from "../../src/index.js";
 
-export default function prime(name) 
-{         
+export default function prime() {         
         const number = getRandomInt(1, 100);
         console.log(`Question: ${number}`);
         const answer = readlineSync.question('Your answer: ');
@@ -11,8 +10,7 @@ export default function prime(name)
         return [answer, correctAnswer];
 }
 
-function isPrime(number) 
-{
+function isPrime(number) {
     if (number <= 1)
         return false;
 

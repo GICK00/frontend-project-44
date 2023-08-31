@@ -1,8 +1,7 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt } from "../src/index.js";
+import { getRandomInt } from "../../src/index.js";
 
-export default function progression(name) 
-{        
+export default function progression() {        
         const progression = generateProgression(getRandomInt(5, 10));
         const hiddenProgression = hideNumber(progression);
         console.log(`Question: ${hiddenProgression.join(' ')}`);
@@ -12,8 +11,7 @@ export default function progression(name)
         return [answer, correctAnswer]; 
 }
 
-function generateProgression(length) 
-{
+function generateProgression(length) {
     const progression = [];
     const start = getRandomInt(1, 10);
     const diff = getRandomInt(1, 5);
@@ -23,8 +21,7 @@ function generateProgression(length)
     return progression;
 }
 
-function hideNumber(progression) 
-{
+function hideNumber(progression) {
     const hiddenIndex = getRandomInt(0, progression.length - 1);
     const hiddenProgression = [...progression];
     hiddenProgression[hiddenIndex] = '..';

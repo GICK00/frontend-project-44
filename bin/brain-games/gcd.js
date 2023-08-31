@@ -1,8 +1,7 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt } from "../src/index.js";
+import { getRandomInt } from "../../src/index.js";
 
-export default function gcd() 
-{
+export default function gcd() {
         var num1 = getRandomInt(1, 100);
         var num2 = getRandomInt(1, 100);
         console.log(`Question: ${num1} ${num2}`);
@@ -12,8 +11,7 @@ export default function gcd()
         return [answer, correctAnswer];  
 }
 
-function gcdNum(a, b) 
-{
+function gcdNum(a, b) {
     if (b === 0) 
         return a;
     return gcdNum(b, a % b);

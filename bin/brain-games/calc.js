@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt } from "../src/index.js";
+import { getRandomInt } from "../../src/index.js";
 
 export default function calc() {
     var randomNumber1 = getRandomInt(1, 100);

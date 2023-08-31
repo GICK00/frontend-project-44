@@ -1,8 +1,8 @@
 import calc from "../../src/calc.js";
-import parity from "../../src/parity.js";
+import parity from "../bin/brain-games/parity.js";
 import gcd from "../../src/gcd.js";
-import prime from "../../src/prime.js";
-import progression from "../../src/progression.js";
+import prime from "./prime.js";
+import progression from "./progression.js";
 
 export default function main(name, type) {
     let i = 0, result = 0;
