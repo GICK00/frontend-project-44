@@ -22,7 +22,8 @@ export default function progressionFunc() {
   const progression = generateProgression(getRandomInt(5, 10));
   const hiddenProgression = hideNumber(progression);
   console.log(`Question: ${hiddenProgression.join(' ')}`);
-  const answer = readlineSync.question('Your answer: ');
+  let answer = readlineSync.question('Your answer: ');
+  answer = parseInt(answer, 10);
   const correctAnswer = progression[hiddenProgression.indexOf('..')];
 
   return [answer, correctAnswer];

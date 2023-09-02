@@ -28,6 +28,7 @@ export default function calc() {
       break;
   }
   console.log(`Question: ${exampleText}`);
-  const answer = readlineSync.question('Your answer: ');
+  let answer = readlineSync.question('Your answer: ');
+  answer = parseInt(answer, 10);
   return [answer, example];
 }

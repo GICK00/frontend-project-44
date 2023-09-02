@@ -10,7 +10,8 @@ export default function gcd() {
   const num1 = getRandomInt(1, 100);
   const num2 = getRandomInt(1, 100);
   console.log(`Question: ${num1} ${num2}`);
-  const answer = readlineSync.question('Your answer: ');
+  let answer = readlineSync.question('Your answer: ');
+  answer = parseInt(answer, 10);
   const correctAnswer = gcdNum(num1, num2);
 
   return [answer, correctAnswer];
