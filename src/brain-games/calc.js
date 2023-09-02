@@ -1,33 +1,33 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt } from "../../src/index.js";
+import { getRandomInt } from '../index.js';
 
 export default function calc() {
-    var randomNumber1 = getRandomInt(1, 100);
-    var randomNumber2 = getRandomInt(1, 100);
-    var sign = getRandomInt(0, 2);
-    var exampleText;
-    let example;
-        
-    switch(sign) {
-        case 0: {
-            exampleText = `${randomNumber1} + ${randomNumber2}`;
-            example = randomNumber1 + randomNumber2;
-            break;
-        }
-        case 1: {
-            exampleText = `${randomNumber1} - ${randomNumber2}`;
-            example = randomNumber1 - randomNumber2;
-            break;
-        }
-        case 2: {
-            exampleText = `${randomNumber1} * ${randomNumber2}`;
-            example = randomNumber1 * randomNumber2;
-            break;
-        }
-    }
+  const randomNumber1 = getRandomInt(1, 100);
+  const randomNumber2 = getRandomInt(1, 100);
+  const sign = getRandomInt(0, 2);
+  let exampleText;
+  let example;
 
-    console.log(`Question: ${exampleText}`)
-    const answer = parseInt(readlineSync.question('Your answer: '));
+  switch (sign) {
+    case 0:
+      exampleText = `${randomNumber1} + ${randomNumber2}`;
+      example = randomNumber1 + randomNumber2;
+      break;
 
-    return [answer, example];
+    case 1:
+      exampleText = `${randomNumber1} - ${randomNumber2}`;
+      example = randomNumber1 - randomNumber2;
+      break;
+
+    case 2:
+      exampleText = `${randomNumber1} * ${randomNumber2}`;
+      example = randomNumber1 * randomNumber2;
+      break;
+
+    default:
+      break;
+  }
+  console.log(`Question: ${exampleText}`);
+  const answer = readlineSync.question('Your answer: ');
+  return [answer, example];
 }

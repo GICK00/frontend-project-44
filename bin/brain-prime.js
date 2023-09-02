@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-import  { greetUser } from "../src/index.js"
+import { greetUser } from '../src/index.js';
 import game from '../src/main.js';
 
 console.log('Welcome to the Brain Games!');
-var name = greetUser();
-console.log(`Answer "yes" if given number is prime. Otherwise answer "no".`);
-game(name, "prime");
+const name = greetUser();
+console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+game(name, 'prime');
